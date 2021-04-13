@@ -1,0 +1,57 @@
+### XOR
+XOR of a number with 0 results in the number itself
+
+XOR of any bit with zero keeps the value of the bit same
+XOR of any bit with one toggles the value of that bit
+example:
+```
+1^0 = 1
+0^0 = 0
+
+1^1 = 0
+0^1 = 1
+```
+
+XOR is associative i.e.
+```
+x^y^z = (x^y)^z = x^(y^z)
+```
+
+XOR is also commutative 
+```
+x^y = y^z
+```
+
+#### Finding the rightmost set bit in a number 
+```
+METHOD 1
+//the number whose rmsb you need to find
+int num = 5;
+int rmsb = num & -n;
+cout<<rmsb<<endl;
+
+
+METHOD 2
+
+//the number whose rmsb you need to find
+int num = 5;
+//the rmsb
+int rmsb = 1;
+
+while((num&rmsb)==0){
+ rmsb = rmsb<<1;
+ }
+ 
+cout<<rmsb<<endl;
+```
+
+#### finding the position of the rightmost set bit
+```
+int num = 16;
+int position = log2(num & -num) +1;
+cout<<position<<endl;
+
+```
+
+#### USEFUL LINKS
+[bit tricks](https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently)
