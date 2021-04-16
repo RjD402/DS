@@ -1,3 +1,18 @@
+### one's and two's compliment of a number
+1’s complement of a binary number is another binary number obtained by toggling all bits in it, i.e., transforming the 0 bit to 1 and the 1 bit to 0
+```
+1's complement of "0111" is "1000"
+1's complement of "1100" is  "0011"
+```
+2’s complement of a binary number is 1 added to the 1’s complement of the binary number. 
+```
+2's complement of "0111" is  "1001"
+2's complement of "1100" is  "0100"
+ 2s complement of 100100 is 011100
+```
+Trick to get the 2s compliment of any binary number.  
+Start traversing from the rightmost bit to left (keeping the bits as they are) till you find the first set bit. Keep this set bit as it is and now flip all the bits to the left of this bit.
+
 ### Bitwise left shift
 ```
  num = num << i;    //multiplication  by pow(2,i)
