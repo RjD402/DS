@@ -43,3 +43,34 @@ int main()
 OUTPUT
 5
 ```
+
+#### sorting a vector of vector containing pair
+example
+```
+int main()
+{
+   vector<vector<pair<int, int>>> big;
+   vector<pair<int,int>> small1,small2,small3;
+   small1.push_back({1,2});
+   small2.push_back({3,4});
+   small3.push_back({5,6});
+   
+   big.push_back(small3);
+   big.push_back(small1);
+   big.push_back(small2);
+   
+   sort(big.begin(),big.end());
+   
+   for(auto p: big){
+       for(auto q: p){
+           cout<<q.first<<" "<<q.second<<endl;
+       }
+   }
+   return 0;
+}
+
+OUTPUT
+1 2
+3 4
+5 6
+```
