@@ -74,3 +74,6 @@ OUTPUT
 3 4
 5 6
 ```
+
+#### important links
+(coin change 2)[https://leetcode.com/problems/coin-change-2/discuss/99212/Knapsack-problem-Java-solution-with-thinking-process-O(nm)-Time-and-O(m)-Space]
