@@ -43,6 +43,30 @@ int main()
 OUTPUT
 5
 ```
+#### checking if two vectors are equal or not
+```
+int main()
+{
+   vector<int> one;
+   vector<int> two;
+   for(int i=1;i<7;i++){
+       i=i*2;
+       one.push_back(i);
+       two.push_back(i);
+       
+   }
+   
+   if(one == two){
+       cout<<"equal"<<endl;
+   }else{
+       cout<<"no"<<endl;
+   }
+   return 0;
+}
+
+OUTPUT
+equal
+```
 
 #### sorting a vector of vector containing pair
 example
